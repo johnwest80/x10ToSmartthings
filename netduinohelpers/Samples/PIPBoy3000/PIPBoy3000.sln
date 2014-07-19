@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIPBoy3000", "PIPBoy3000\PIPBoy3000.csproj", "{77EC8BBC-F2C3-4DBF-930E-787C16300380}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D15C30B3-3FDE-475F-AB25-7EA65DE56911} = {D15C30B3-3FDE-475F-AB25-7EA65DE56911}
+		{0ED5DED2-E18A-420F-9C1D-D92A800669E1} = {0ED5DED2-E18A-420F-9C1D-D92A800669E1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netduino.helpers", "..\..\netduino.helpers.csproj", "{D15C30B3-3FDE-475F-AB25-7EA65DE56911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komodex.NETMF.MicroTweet", "PIPBoy3000\NETMFMicroTweet[PrivateBuild]\Komodex.NETMF.MicroTweet\Komodex.NETMF.MicroTweet.csproj", "{0ED5DED2-E18A-420F-9C1D-D92A800669E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77EC8BBC-F2C3-4DBF-930E-787C16300380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77EC8BBC-F2C3-4DBF-930E-787C16300380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77EC8BBC-F2C3-4DBF-930E-787C16300380}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{77EC8BBC-F2C3-4DBF-930E-787C16300380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77EC8BBC-F2C3-4DBF-930E-787C16300380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77EC8BBC-F2C3-4DBF-930E-787C16300380}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D15C30B3-3FDE-475F-AB25-7EA65DE56911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D15C30B3-3FDE-475F-AB25-7EA65DE56911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D15C30B3-3FDE-475F-AB25-7EA65DE56911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D15C30B3-3FDE-475F-AB25-7EA65DE56911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED5DED2-E18A-420F-9C1D-D92A800669E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED5DED2-E18A-420F-9C1D-D92A800669E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED5DED2-E18A-420F-9C1D-D92A800669E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED5DED2-E18A-420F-9C1D-D92A800669E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

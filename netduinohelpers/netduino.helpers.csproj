@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>netduino.helpers</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>netduino.helpers</RootNamespace>
+    <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D15C30B3-3FDE-475F-AB25-7EA65DE56911}</ProjectGuid>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="Fun\CartridgeVersionInfo.cs" />
+    <Compile Include="Fun\GameLoop.cs" />
+    <Compile Include="Hardware\AdaFruitILI9328.cs" />
+    <Compile Include="Hardware\AdaFruitSSD1306.cs" />
+    <Compile Include="Hardware\AdaFruitST7735.cs" />
+    <Compile Include="Hardware\AnalogJoystick.cs" />
+    <Compile Include="Hardware\DS1307.cs" />
+    <Compile Include="Hardware\ExtendedSpiConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hardware\LedMatrix.cs" />
+    <Compile Include="Hardware\Max72197221.cs" />
+    <Compile Include="Hardware\PushButton.cs" />
+    <Compile Include="Hardware\ShiftRegister74HC595.cs" />
+    <Compile Include="Helpers\BitReverseTable256.cs" />
+    <Compile Include="Imaging\B.cs" />
+    <Compile Include="Imaging\Bitmap.cs" />
+    <Compile Include="Imaging\CharSet.cs" />
+    <Compile Include="Imaging\CoincEventHandler.cs" />
+    <Compile Include="Imaging\CoincEventArgs.cs" />
+    <Compile Include="Imaging\Composition.cs" />
+    <Compile Include="Imaging\PlayerMissile.cs" />
+    <Compile Include="Imaging\SmallChars.cs" />
+    <Compile Include="Math\Trigo.cs" />
+    <Compile Include="Math\Vector2D.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serial\SerialUserInterface.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SPOT.Hardware" />
+    <Reference Include="Microsoft.SPOT.Hardware.SerialPort" />
+    <Reference Include="Microsoft.SPOT.Native">
+    </Reference>
+    <Reference Include="SecretLabs.NETMF.Hardware, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System.IO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SPI\SPIHelper.csproj">
+      <Project>{034AE0F2-D1C1-43A7-9240-60DD64B9F8E9}</Project>
+      <Name>SPIHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

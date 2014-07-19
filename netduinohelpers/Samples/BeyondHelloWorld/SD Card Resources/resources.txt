@@ -1,0 +1,6 @@
+bitmap:name=spaceinvaders.bmp.bin;width=32;height=8
+bitmap:name=c64-computer.bmp.bin;width=256;height=16
+string:name=hi;value=Hello!
+string:name=gameover;value=Game Over!
+rttl:name=songs.txt
+assembly:file=assm.pe;name=ASSM;version=1.0.0.0;class=ASSM.TestClass;method=Print

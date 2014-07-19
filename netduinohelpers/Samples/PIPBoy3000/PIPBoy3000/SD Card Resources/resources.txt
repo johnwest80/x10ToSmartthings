@@ -1,0 +1,15 @@
+* NTP Server list: http://tf.nist.gov/tf-cgi/servers.cgi
+string:name=ntpServers;value=nist1-lv.ustiming.org,time-nw.nist.gov,nist1.aol-ca.symmetricom.com,nist1.symmetricom.com,nist1-sj.ustiming.org,nist1-la.ustiming.org,time.nist.gov,utcnist.colorado.edu,utcnist2.colorado.edu,ntp-nist.ldsbc.edu
+*
+* Register your application @ http://dev.twitter.com/
+* To obtain your tokens and secrets check the 'Application details' page and copy them below
+*
+string:name=accessToken;value=???
+string:name=accessTokenSecret;value=???
+string:name=consumerKey;value=???
+string:name=consumerSecret;value=???
+*
+* Geiger counter location GPS coordinates
+*
+string:name=latitude;value=47.6741667
+string:name=longitude;value=-122.1202778
