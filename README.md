@@ -3,9 +3,11 @@ x10ToSmartthings
 
 This is a version that works.  You need to set up the hardware stack as shown below...
 
--- Smartthings Shield (https://shop.smartthings.com/#!/products/smartthings-shield-arduino)
--- Rs232 shield (https://www.sparkfun.com/products/11958)
--- Netduino Plus V2 (https://www.sparkfun.com/products/11608)
+Smartthings Shield (https://shop.smartthings.com/#!/products/smartthings-shield-arduino)
+
+Rs232 shield (https://www.sparkfun.com/products/11958)
+
+Netduino Plus V2 (https://www.sparkfun.com/products/11608)
 
 Steps:
 
